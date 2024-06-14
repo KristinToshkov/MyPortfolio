@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pink</title>
+    <link rel="stylesheet" href="stylesSecondary.css">
+    <link rel="stylesheet" href="stylesPink.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="icon" href="keepthesilence.ico" type="image/x-icon"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <img class="logo" src="outlines.png">
+        <div class="back-button"><a href="index.html" class="navBack clickable-object" onclick="setAnimationFlag()">Back</a></div>
+       </div>
+       <img id="pink-girl" src="PinkAudio/pinkGirl.png">
+       <audio src="PinkAudio/pink-theme.mp3" loop>
+       </audio>
+
+    <div class="bg-animation">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+    </div><!-- / STAR ANIMATION -->
+    <script>
+        var audioPlayed = false;
+
+document.addEventListener('click', function() {
+    if (!audioPlayed) {
+        var audio = new Audio('PinkAudio/pink-theme.mp3');
+        audio.loop = true;
+        audio.volume = 0.5; // Adjust the volume level here (0.0 to 1.0)
+        audio.play();
+
+        var pinkGirl = document.getElementById('pink-girl');
+        pinkGirl.classList.add('reveal-girl');
+
+        audioPlayed = true;
+    }
+});
+    </script>
+</body>
+</html>

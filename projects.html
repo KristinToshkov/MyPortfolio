@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" href="stylesSecondary.css">
+    <link rel="stylesheet" href="stylesProjects.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="icon" href="keepthesilence.ico" type="image/x-icon"/>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="navigation">
+        <img class="logo" src="outlines.png">
+        <div class="back-button"><a href="index.html" class="navBack clickable-object" onclick="setAnimationFlag()">Back</a></div>
+       </div>
+       <h1 class="projects-button clickable-object reveal-button" onclick="revealProjects()" >Reveal Projects</h1>
+    <div class="project-box">
+        <div style="animation-delay: 0.2s;" class="project-item galactica-box">
+            <h1>Galactica</h1>
+            <h2 style="animation-delay: 0.2s;">A 90s arcade-like space shooter with engaging combat and interactive storytelling. With fast-paced gameplay and energetic music, it's sure to test your reflexes!</h2>
+            <h3 style="animation-delay: 0.4s;">Kris and his friends love video games so much that one day they decided the world needs one more! Developed in Unity using C#, and published on Itch.io:</h3>
+            <a href="https://kristintoshkov.itch.io/galactica" style="animation-delay: 0.6s;" target=”_blank” class="galactica-link clickable-object">Check it out!</a>
+            <audio id="galactica-sound" src="ProjectsAudio/Galactica.mp3" loop></audio>
+        </div>
+        
+        <div style="animation-delay: 0.4s;" class="project-item pysilon-box">
+            <h1>The PySilon Project</h1>
+            <h2 style="animation-delay: 0.2s;">Advanced RAT malware written in Python, fully controllable through Discord with dedicated GUI builder to make preparation easier.</h2>
+            <h3 style="animation-delay: 0.4s;">Kris and his friends like breaking stuff, so one day they decided to experiment with how easy it is to exploit systems, break rules and manipulate technology to their will. Contributions to the PySilon Project such as features and modifications: </h3>
+            <a href="https://pysilon.net/" style="animation-delay: 0.6s;" target=”_blank” class="pysilon-link clickable-object">Show me!</a>
+            <audio id="pysilon-sound" src="ProjectsAudio/PySilon.mp3" loop></audio>
+        </div>
+        <div style="animation-delay: 0.6s;" class="project-item movie-box">
+            <h1>The Monsters Behing Me</h1>
+            <h2 style="animation-delay: 0.2s;">An Overwatch animated movie, tied to an ARG(<a class="info-link clickable-object" style="display:inline" href="https://en.wikipedia.org/wiki/Alternate_reality_game" target=”_blank”>?</a>). A thought-provoking story with layers, touching on topics such as love, hate, nostalgia, and identity disorder.</h2>
+            <h3 style="animation-delay: 0.4s;">Kris loves a good story, but he hates delivering it on a silver platter. On the first watch, you probably won't understand much, but it is only when you dive deeper that you begin seeing reflections of the world around you and, most importantly, reflections of yourself. </h3>
+            <a href="https://youtu.be/snnfyIhePQc?si=XDmUlvnM-6iYm2Gr" style="animation-delay: 0.6s;" target=”_blank” class="movie-link clickable-object">Watch here!</a>
+            <audio id="movie-sound" src="ProjectsAudio/Movie.mp3" loop></audio>
+        </div>
+        <div style="animation-delay: 0.8s;" class="project-item arg-box">
+            <h1>Kris' ARG(<a class="info-link clickable-object" style="display:inline" href="https://en.wikipedia.org/wiki/Alternate_reality_game" target=”_blank”>?</a>)</h1>
+            <h2 style="animation-delay: 0.2s;">Encrypted with various techniques, this alternate reality game uses a kids' show as a vessel to portray its characters and storyline. It's a rabbit hole of grief and other emotions, and the deeper you go, the more you learn about the man himself.</h2>
+            <h3 style="animation-delay: 0.4s;">Kris is a storyteller, but not in the traditional sense. His Alternate Reality Game stands as an example of brilliant storytelling of the "show, don't tell" kind. This is a game that only the most daring, tech-savvy, and perceptive can win.</h3>
+            <a href="https://youtu.be/14c3KmN8FXc?si=EDytcj9kAumayMv_" style="animation-delay: 0.6s;" target=”_blank” class="arg-link clickable-object">Where to start!</a>
+            <audio id="arg-sound" src="ProjectsAudio/Arg.mp3" loop></audio>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="bg-animation">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+    </div><!-- / STAR ANIMATION -->
+    
+</body>
+</html>

@@ -1,0 +1,347 @@
+
+.project-box {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+
+.project-item {
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 20%;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    row-gap: 10%;
+    box-shadow: 0vw 0vw 0vw 1px #e40000;
+    position: relative;
+    /* animation: slide-in-projects 0.4s ease forwards;  */
+    visibility: hidden;
+}
+.reveal {
+    animation: slide-in-projects 0.4s ease forwards;
+}
+
+.reveal-out {
+    animation: fade-out 0.4s ease forwards;
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        top: 20%;
+    }
+    to {
+        top: 15%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.galactica-box {
+    background-image: url("ProjectsBackgrounds/GalacticaCover.png");
+    background-size:cover;
+    background-position: 0vw 30%;
+}
+
+.movie-box {
+    background-image: url("ProjectsBackgrounds/MovieCover.png");
+    background-size:50%;
+    background-position: 50%;
+}
+
+.movie-box:hover{
+    background-image: url("ProjectsBackgrounds/Movie.gif");
+    background-size: cover;
+}
+
+.galactica-box:hover {
+    background-image: url("ProjectsBackgrounds/Galactica.gif");
+}
+
+.arg-box {
+    background-image: url("ProjectsBackgrounds/ArgCover.jpg");
+    background-size:contain;
+    background-position: 50%;
+}
+
+.arg-box:hover {
+    background-image: url("ProjectsBackgrounds/Arg.gif");
+    background-size: cover;
+}
+
+.pysilon-box {
+    background-image: url("ProjectsBackgrounds/PysilonCover.png");
+    background-size:contain;
+    background-position: 50%;
+}
+
+.pysilon-box:hover {
+    background-image: url("ProjectsBackgrounds/Pysilon.gif");
+    background-size: cover;
+}
+
+
+
+.project-item h1 {
+    font-size: 2.5vw;
+    color: rgb(255, 7, 201);
+    font-family: GalacticaFont;
+    text-align: center;
+    margin-top: 20%;
+  text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000,
+     0 0 1vw #e20084,
+     0 0 2vw #e20084,
+     0 0 3vw #e20084;
+     display: none;
+     opacity: 0;
+     transition: all 0.3s ease;
+}
+.project-item h2 {
+    font-family: GalacticaFont;
+    font-size: 2vw;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 2%;
+    text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+     display: none;
+     opacity: 0;
+     transition: all 0.3s ease;
+}
+
+.project-item h3 {
+    font-family: GalacticaFont;
+    font-size: 1.5vw;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+     display: none;
+     opacity: 0;
+     transition: all 0.3s ease;
+}
+
+.project-item a {
+    font-family: GalacticaFont;
+    color: deeppink;
+    font-size: 2vw;
+    text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+     opacity: 0;
+    display: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover h1, .project-item:hover h2, .project-item:hover h3, .project-item:hover a {
+    display:block;
+    animation: fade-in 1s ease forwards; 
+}
+
+.pysilon-box h1, .pysilon-box h2, .pysilon-box h3, .pysilon-box a {
+    font-family: VirusFont;
+}
+
+.pysilon-box h1 {
+    color: green;
+    text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000,
+     0 0 1vw #00be10,
+     0 0 2vw #53e200,
+     0 0 3vw #66e200;
+     margin-top: 15%;
+}
+
+.pysilon-box a {
+    font-family: VirusFont;
+    color: rgb(20, 255, 145);
+}
+
+.movie-box h1, .movie-box h2, .movie-box h3, .movie-box a {
+    font-family: MovieFont;
+}
+
+.movie-box h1 {
+    color: rgb(120, 0, 201);
+    text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000,
+     0 0 1vw #be002f,
+     0 0 2vw #e20013,
+     0 0 3vw #e20084;
+     margin-top: 15%;
+}
+
+.movie-box h2, .movie-box h3 {
+    padding-right: 3%;
+}
+
+.movie-box a {
+    font-family: MovieFont;
+    color: rgb(83, 20, 255);
+}
+
+.arg-box h1, .arg-box h2, .arg-box h3, .arg-box a {
+    font-family: Arg;
+}
+.arg-box h1 {
+    color: rgb(201, 0, 134);
+    text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000,
+     0 0 1vw #001cbe,
+     0 0 2vw #2900e2,
+     0 0 3vw #00a2e2;
+     margin-top: 0%;
+}
+
+.arg-box h2, .arg-box h3 {
+    padding-right: 1%;
+    text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+
+.arg-box a {
+    font-family: Arg;
+    color: rgb(20, 149, 255);
+    text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+     display: none;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project-item:hover {
+    transition: all 0.3s ease;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10vw #000000, inset 0 0 5vw #000000, inset 0 0 15vw #000000, inset 0 0 1vw #000000, 0vw 0vw 2vw 1vw red;
+    
+}
+
+.projects-button {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
+    color: rgb(0, 0, 0);
+    font-size: 5vw;
+    z-index: 2;
+    -webkit-text-stroke: #e40000 0.1vw;
+    font-family: glitchedFont2;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    text-shadow: 0 0 0.5vw red;
+}
+
+.reveal-button {
+    animation: slide-in-button 0.4s ease forwards;
+}
+
+@keyframes slide-in-button {
+    from {
+      top: 30%;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        top: 20%;
+      opacity: 1;
+      visibility: visible;/* Fade in to full opacity */
+    }
+}
+
+.projects-button:hover {
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+  transform: translate(-50%, -10%) scale(1.05);
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+  -webkit-text-stroke: #000000 0.04vw;
+}
+
+@font-face {
+    font-family: glitchedFont2;
+    src: url(glitchedFont2.ttf);
+  }
+
+
+@font-face {
+    font-family: GalacticaFont;
+    src: url(ProjectsFonts/galactica.ttf);
+  }
+
+  @font-face {
+    font-family: VirusFont;
+    src: url(ProjectsFonts/virus.ttf);
+  }
+
+  @font-face {
+    font-family: MovieFont;
+    src: url(ProjectsFonts/movie.ttf);
+  }
+
+  @font-face {
+    font-family: Arg;
+    src: url(ProjectsFonts/arg.otf);
+  }
+
+  @keyframes slide-in-projects {
+    from {
+      top: 5vw;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        top: 0vw;
+      opacity: 1;
+      visibility: visible;/* Fade in to full opacity */
+    }
+}

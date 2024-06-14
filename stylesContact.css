@@ -1,0 +1,152 @@
+#contact-box img {
+    width: 10vw;
+    filter: drop-shadow(0 0 0.75rem rgb(221, 0, 0));
+    transition: transform 0.3s ease;
+}
+
+#discord-box img {
+    width: 15vw;
+}
+
+#instagram-box img {
+    width: 11vw;
+}
+
+#github-box img {
+    width: 15vw;
+}
+
+body {
+overflow: hidden;
+}
+
+#contact-box {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+    opacity: 0;
+    animation: reveal-contacts 1s ease 0.2s forwards, move-contacts 1s ease 0.8s forwards;
+}
+
+#custom-alert {
+    position: absolute;
+    background-color: black;
+    display: flex;
+    height: 8vh;
+    width: 25vw;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0.4vw 0.2vw rgb(201, 0, 0);
+    border-radius: 1vw;
+    left: 50%;
+    transform: translate(-50%,80%);
+
+}
+
+#eyes {
+    position: absolute;
+    width: 140vw;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(0 0 0.75rem rgb(221, 0, 0));
+    opacity: 0;
+    animation: reveal-eyes 6s ease 2s forwards;
+}
+
+
+
+#custom-alert h2 {
+    position: relative;
+    z-index: 1;
+    color: red;
+    font-family: glitchedFont1;
+}
+
+
+#contact-box img:hover {
+    transform: scale(1.5);
+}
+
+#discord-box:hover {
+    filter: invert(10%) sepia(57%) saturate(5917%)
+     hue-rotate(349deg) brightness(114%) contrast(116%) 
+     drop-shadow(0 0 0.75rem rgb(0, 152, 212));
+}
+
+#instagram-box:hover {
+    filter: invert(10%) sepia(57%) saturate(5917%)
+     hue-rotate(349deg) brightness(114%) contrast(116%) 
+     drop-shadow(0 0 1rem rgb(255, 0, 255));
+}
+
+#github-box:hover {
+    filter: invert(10%) sepia(57%) saturate(5917%)
+     hue-rotate(349deg) brightness(114%) contrast(116%) 
+     drop-shadow(0 0 1rem rgb(4, 0, 255));
+}
+
+
+.reveal-custom-alert {
+    animation: reveal-custom-alert 3s ease forwards;
+}
+
+@keyframes reveal-custom-alert {
+    0% {
+        transform: translate(-50%,80%);
+    }
+    20% {
+        transform: translate(-50%,-60%);
+    }
+    80% {
+        transform: translate(-50%,-60%);
+    }
+    100% {
+        transform: translate(-50%,80%);
+    }
+}
+
+@keyframes reveal-eyes {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+
+
+@keyframes reveal-contacts {
+    0% {
+        scale: 0.5;
+        opacity: 0;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes move-contacts {
+    0% {
+        gap: 0;
+    }
+    50% {
+        gap: 11vw;
+    }
+    100% {
+        gap: 10vw;
+    }
+}
+

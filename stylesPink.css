@@ -1,0 +1,27 @@
+body {
+    overflow: hidden;
+}
+
+#pink-girl {
+    position: absolute;
+    filter: invert(1);
+    left: -50%;
+    transform: translate(-20%,0%);
+    opacity: 0;
+}
+
+.reveal-girl {
+    animation: reveal-girl 90s ease 1 forwards;
+}
+
+@keyframes reveal-girl {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+    100% {
+        left: 50%;
+        opacity: 1;
+    }
+}
+

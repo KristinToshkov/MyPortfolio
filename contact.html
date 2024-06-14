@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesSecondary.css">
+    <link rel="stylesheet" href="stylesContact.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="icon" href="keepthesilence.ico" type="image/x-icon"/>
+    <script src="script.js" defer></script>
+    
+</head>
+<style>
+    @media screen and (max-width: 600px) {
+    #contact-box {
+      flex-direction: column;
+    }
+    #discord-box img {
+      width: 15vh;
+  }
+  body, html {
+    position: relative;
+    overflow: hidden;
+  }
+  #custom-alert h2 {
+    font-size: 5vw;
+  }
+
+  #custom-alert {
+    height: 12vh;
+    width: 50vh;
+  }
+  
+  #instagram-box img {
+      width: 11vh;
+  }
+  
+  #github-box img {
+      width: 15vh;
+  }
+  }
+</style>
+<body>
+    <div class="navigation">
+        <img class="logo" src="outlines.png">
+        <div class="back-button"><a href="index.html" class="navBack clickable-object" onclick="setAnimationFlag()">Back</a></div>
+       </div>
+        <img id="eyes" src="SkullPlaceholder.png">
+       
+       <div id="contact-box">
+        <div id="discord-box">
+            <img src="ContactIcons/discord.png" alt="Discord Icon" id="discord-icon" class="clickable-object">
+        </div>
+        <div id="instagram-box">
+            <a href="https://www.instagram.com/kristin_toshkov/" target="_blank">
+                <img src="ContactIcons/instagram.png" alt="Instagram Icon" id="instagram-icon" class="clickable-object">
+            </a>
+        </div>
+        <div id="github-box">
+            <a href="https://github.com/KristinToshkov" target="_blank">
+                <img src="ContactIcons/github.png" alt="Github Icon" id="github-icon" class="clickable-object">
+            </a>
+        </div>
+       </div>
+       <div id="custom-alert">
+        <h2>Copied discord to clipboard!</h2>
+       </div>
+    
+       <div class="bg-animation">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+    </div><!-- / STAR ANIMATION -->
+
+    
+</body>
+</html>

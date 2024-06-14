@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="icon" href="keepthesilence.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="stylesMain.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <img class="logo" id="logo" src="outlines.png">
+    <h1 data-glitch="Kristin Toshkov" class="glitch">Kristin Toshkov</h1>
+    <h2 class="links1"><a href="about.html" class="clickable-object">Who is Kris</a></h2>
+    <h2 class="links2"><a href="projects.html" class="clickable-object">What is he working on</a></h2>
+    <h2 class="links3"><a href="contact.html" class="clickable-object">How to contact him</a></h2>
+    <img class="logo2" src="TheMaskGlitched3.gif" onclick="replaceImage()">
+    <div class="bg-animation">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='stars4'></div>
+    </div><!-- / STAR ANIMATION -->
+
+    <script>
+        function replaceImage() {
+            var logo = document.querySelector('.logo2');
+            if (logo.src.endsWith('outlines.png')) {
+                logo.classList.remove('fade-in'); // Remove fade-in class first
+                logo.offsetWidth; // Trigger reflow to apply fade-in animation
+                logo.classList.add('fade-out'); // Add fade-out class to hide the logo
+                setTimeout(function () {
+                    logo.src = 'TheMaskGlitched3.gif'; // Change image source after fade-out animation
+                    logo.classList.remove('fade-out'); // Remove fade-out class
+                    logo.offsetWidth; // Trigger reflow to apply fade-in animation
+                    logo.classList.add('fade-in'); // Add fade-in class to reveal the logo
+                }, 300); // Wait for 300 milliseconds before changing the image source
+            } else {
+                logo.classList.remove('fade-in'); // Remove fade-in class first
+                logo.offsetWidth; // Trigger reflow to apply fade-in animation
+                logo.classList.add('fade-out'); // Add fade-out class to hide the logo
+                setTimeout(function () {
+                    logo.src = 'outlines.png'; // Change image source after fade-out animation
+                    logo.classList.remove('fade-out'); // Remove fade-out class
+                    logo.offsetWidth; // Trigger reflow to apply fade-in animation
+                    logo.classList.add('fade-in'); // Add fade-in class to reveal the logo
+                }, 300); // Wait for 300 milliseconds before changing the image source
+            }
+        };
+        window.onload = function() {
+    var animationFlag = sessionStorage.getItem('animationFlag');
+    if (animationFlag === 'true') {
+      var box = document.getElementById("logo");
+      if (box) {
+        // Add the 'animate' class to trigger the animation
+        box.classList.add("moveLeftNav");
+        // Remove the 'animate' class after the animation completes
+        setTimeout(function() {
+          box.classList.remove("moveLeftNav");
+        }, 500);
+        sessionStorage.setItem('animationFlag', 'false');
+      }
+    }
+    else
+    {
+        var box = document.getElementById("logo");
+        if (box) {
+            box.classList.add("animationSlideIn");
+            setTimeout(function() {
+          box.classList.remove("animationSlideIn");
+        }, 500);
+        }
+    }
+  };
+    </script>
+</body>
+</html>

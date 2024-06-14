@@ -1,0 +1,173 @@
+
+@media all and (max-width: 600px) {
+    a.navBack {
+      font-size: 13vw;
+      top: 2vw;
+      left: 32vw;
+    }
+    .element {
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
+    }
+    .SkullPlaceholder {
+      opacity: 0;
+    }
+    .opening-element {
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
+    }
+    h2.opening {
+      transform: translate(20vw, 0);
+    }
+    h2.glowing {
+      transform: translate(20vw, 0);
+    }
+    .content {
+      width: 90%;
+      gap: 2vw;
+      display: inline-block
+    }
+    .bio {
+      font-size: large;
+    }
+    h2.opening {
+      font-size: larger;
+    }
+    h2.glowing {
+      font-size: larger;
+    }
+    img.photo {
+      width: 75%;
+    }
+    img.photo2 {
+      width: 75%;
+      height: 100%;
+    }
+    .Projects {
+      margin-top: 20%;
+    }
+    a.projects-button {
+      font-size: 10vw;
+      text-decoration: underline;
+    }
+    img.photo3 {
+      width: 75%;
+      height: 100%;
+    }
+    img.photo1 {
+      width: 75%;
+      height: 100%;
+    }
+
+  }
+  @media screen and (max-width: 600px) {
+
+    .links1 {
+      top: 25%;
+      left: 50%;
+      width: 60vw;
+      color: rgb(255, 0, 0);
+    }
+    .links1 a, .links2 a {
+      font-size: 11vw;
+    }
+
+    .glitch {
+      top: 8%;
+      font-size: 10vw;
+      transform: translate(-50%, 0%);
+      left: 50%;
+    }
+  
+   .links2 {
+      top: 40%;
+      left: 50%;
+      width: 60vw;
+      color: rgb(255, 0, 0);
+    }
+
+    .links3 {
+      width: 100vw;
+      color: rgb(255, 0, 0);
+    }
+    
+    .logo2 {
+      width: 50vw;
+      top: 63%;
+    }
+    .logo {
+      width: 15vw;
+      left: 50%;
+      transform: translate(-50%,-0%);
+      opacity: 0;
+      animation: 0s;
+    }
+    a {
+      font-size: 10vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .projects-button {
+      font-size: 10vw;
+      text-wrap: nowrap;
+    }
+
+    .project-box {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-item {
+      display: flex;
+      overflow: auto;
+      margin-top: 20%;
+      height: 25%;
+      width: 80%;
+    }
+
+    .project-item:hover {
+      height: 100vh;
+      width: 80%;
+    }
+
+     .project-item h2, .project-item h3, .project-item a {
+      font-size: 150%;
+    }
+
+    .project-item h1 {
+      font-size: 200%;
+    }
+
+  }
+
+  /* @media screen and (max-width: 600px) {
+    #contact-box {
+      flex-direction: column;
+    }
+    #discord-box img {
+      width: 15vh;
+  }
+  body, html {
+    position: relative;
+    overflow: hidden;
+  }
+  #custom-alert h2 {
+    font-size: 5vw;
+  }
+
+  #custom-alert {
+    height: 12vh;
+    width: 50vh;
+  }
+  
+  #instagram-box img {
+      width: 11vh;
+  }
+  
+  #github-box img {
+      width: 15vh;
+  }
+  } */

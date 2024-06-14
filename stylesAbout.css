@@ -1,0 +1,271 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60vw; /* Adjust the size of the square as needed */
+  height: 300vh; /* Adjust the size of the square as needed */
+  background-color: rgb(0, 0, 0);
+  padding: 5%;
+  z-index: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  outline: 0.1vw solid red;
+  animation: slide-in1 0.5s ease-out forwards;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  gap: 5%;
+}
+@keyframes slide-inText {
+    from {
+      top: 3vw;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        top: 0vw;
+      opacity: 1; /* Fade in to full opacity */
+    }
+}
+.slideInText {
+    animation: slide-in 0.5s ease-out forwards; /* Apply slide-in animation */
+}
+
+@keyframes slide-in1 {
+    from {
+      top: 12%;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        
+        top: 10%;
+      opacity: 1; /* Fade in to full opacity */
+    }
+}
+@keyframes slide-in2 {
+    from {
+      top: 140%;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        
+        top: 135%;
+      opacity: 1; /* Fade in to full opacity */
+    }
+}
+
+@keyframes slide-in3 {
+    from {
+      top: 100%;
+      opacity: 0; /* Start with hidden opacity */
+    }
+    to {
+        
+        top: 95%;
+      opacity: 1; /* Fade in to full opacity */
+    }
+}
+@keyframes slide-in4 {
+    from {
+      top: 60%;
+      opacity: 0;
+    }
+    to {
+        top: 130vw;
+      opacity: 1;
+    }
+}
+.SkullPlaceholder {
+  filter: invert(1); position: absolute; width: 20vw;top: -60%; opacity: 1%; transform: translate(15%, 50%);
+}
+
+
+.opening-element {
+  display: flex;
+  gap: 10%;
+
+}
+
+.element {
+  display: flex;
+  gap: 5%;
+}
+
+
+
+
+.Projects {
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    /* top: -74vw; */
+    /* left: 50%; */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* margin-top: 50%; */
+    
+}
+a.projects-button {
+    font-size: 4vw;
+    font-family: glitchedFont5;
+    position: relative;
+    /* left: 37%; */
+    color: black;
+    text-decoration: none;
+    text-shadow: 
+     -1px -1px 0 rgb(255, 0, 0),
+     1px -1px 0 rgb(153, 0, 0),
+     -1px  1px 0 rgb(184, 0, 0),
+     1px  1px 0 rgb(255, 0, 0);
+     animation: slide-inText 0.5s ease-out forwards;
+    opacity: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+
+}
+
+a.projects-button:hover {
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+}
+
+.Projects:hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scale(1.05);
+}
+
+img.photo {
+    position: relative;
+    width: 20vw;
+    padding: 0.2vw;
+    animation: slide-inText 1s ease-out forwards;
+    animation-delay: 0.5s; /* Add a delay of 0.5 seconds */
+    opacity: 0;
+    border: 0.1vw solid red; /* Add a red border */
+    box-shadow: 0 0 10px red; /* Add a red glow effect */
+}
+
+img.photo1 {
+    position: relative;
+    /* left: 26vw; */
+    width: 30vw;
+    height: 20vw;
+    padding: 0.2vw;
+    animation: slide-inText 1s ease-out forwards; 
+    animation-delay: 2.2s; /* Add a delay of 0.5 seconds */
+    opacity: 0;
+    border: 0.1vw solid red; /* Add a red border */
+    box-shadow: 0 0 10px red; /* Add a red glow effect */
+}
+
+img.photo2 {
+    position: relative;
+    width: 18vw;
+    height: 30vw;
+    padding: 0.2vw;
+    animation: slide-inText 1s ease-out forwards;
+    animation-delay: 2.4s; /* Add a delay of 0.5 seconds */
+    opacity: 0;
+    border: 0.1vw solid red; /* Add a red border */
+    box-shadow: 0 0 10px red; /* Add a red glow effect */
+}
+img.photo3 {
+    position: relative;
+    /* left: 32vw; */
+    width: 20vw;
+    height: 30vw;
+    padding: 0.2vw;
+    animation: slide-inText 1s ease-out forwards; 
+    animation-delay: 3s; /* Add a delay of 0.5 seconds */
+    opacity: 0;
+    border: 0.1vw solid red; /* Add a red border */
+    box-shadow: 0 0 10px red; /* Add a red glow effect */
+}
+
+h2.glowing{
+    font-family: glitchedFont6;
+    position: relative;
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red;
+    left: 0vw;
+    top: 0vw;
+    line-height: 1.5vw;
+    text-align: left;
+    animation: slide-inText 0.5s ease-out forwards; 
+    opacity: 0;
+}
+
+
+h2.opening {
+    font-family: glitchedFont5;
+    position: relative;
+    top: 0vw; /* Adjust as needed */
+    left: 0vw; /* Adjust as needed */
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+    text-shadow: 
+     -1px -1px 0 rgb(255, 0, 0),
+     1px -1px 0 rgb(153, 0, 0),
+     -1px  1px 0 rgb(184, 0, 0),
+     1px  1px 0 rgb(255, 0, 0);
+     text-align: right;
+     line-height: 1.5vw;
+     animation: slide-inText 0.5s ease-out forwards; 
+         opacity: 0;
+}
+
+.text {
+    position: relative;
+    width: fit-content;
+    /* left: 23.5vw; */
+    /* top: -32vw; */
+}
+
+.text2 {
+    width: fit-content;
+    position: relative;
+    /* left: 31vw; */
+    /* top: -43vw; */
+}
+
+.opening-bio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+
+.paragraph {
+    position: relative;
+    /* top: -40vw; */
+    color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+    /* align-items: center; */
+    /* left: 25vw; */
+    /* max-width: 31vw; */
+}
+
+.bio {
+    font-family: 'Lucida Console', Monospace;
+    position: relative;
+    color: #ff0000;
+    /* width: 33vw; */
+    text-align:justify;
+    font-size: 1.2vw;
+    animation: slide-inText 0.5s ease-out forwards; 
+    opacity: 0;
+}
+
+@font-face {
+    font-family: glitchedFont5;
+    src: url(dataFont.ttf);
+  }
+
+  @font-face {
+    font-family: glitchedFont6;
+    src: url(bitFont.ttf);
+  }
+
+
+ 
